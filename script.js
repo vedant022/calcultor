@@ -28,8 +28,7 @@ function buttonClick(event) {
     }
 }
 
-function appendToOutput(value) {
-    // Check if the current output is '0' and the new value is a digit or a decimal point
+function appendToOutput(value) 
     if (outputElement.textContent === '0' && (/\d|\./).test(value)) {
         outputElement.textContent = value;
     } else {
